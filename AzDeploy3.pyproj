@@ -58,6 +58,7 @@
     <Folder Include="AzDeploy3\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AzDeploy3Y - Web Deploy.pubxml" />
     <Content Include="web.config" />
     <None Include="AzDeploy3 - Web Deploy.pubxml" />
     <None Include="AzDeploy3X - Web Deploy.pubxml" />

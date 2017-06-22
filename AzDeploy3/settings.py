@@ -26,7 +26,7 @@ SECRET_KEY = 'a3516dfe-75a0-43de-8ec9-b27cc3f9f702'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['azdeploy3y.azurewebsites.net']
 
 
 # Application definition
