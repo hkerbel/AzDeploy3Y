@@ -123,4 +123,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
+STATIC_ROOT_ORIGINAL = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
+###???STATIC_ROOT = os.path.join( SITE_ROOT, 'static')
+
+
+
+
+from os import path
+PROJECT_ROOT = path.dirname(path.abspath(path.dirname(__file__)))
+STATIC_ROOT = path.join(PROJECT_ROOT, 'static').replace('\\','/')

@@ -2,6 +2,8 @@
 Definition of views.
 """
 
+from AzDeploy3 import settings
+
 from django.shortcuts import render
 from django.http import HttpRequest, HttpResponse
 from django.template import RequestContext
@@ -26,6 +28,13 @@ def tic(request):
     else:
         resp += pyhtonPath
 
+    resp += "<br>"
+
+    resp += "<br>STATIC_ROOT: " + settings.STATIC_ROOT
+    resp += "<br>STATIC_ROOT_ORIGINAL: " + settings.STATIC_ROOT_ORIGINAL
+    resp += "<br>"
+    resp += "<br>STATIC_URL: " + settings.STATIC_URL
+    resp += "<br>BASE_DIR: " + settings.BASE_DIR
 
     return HttpResponse(resp)
 
